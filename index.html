@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>GoSushi Survey</title>
+  </head>
+
+  <body>
+
+    <div class="document">
+      <h1 id="title">GoSushi Survey</h1>
+      <p id="description">This is a survey for our customers</p> 
+  
+      <form id="survey-form">
+
+        <fieldset> 
+          <h3>General information</h2>
+          <label id="name-label">
+            Full Name : 
+            <input id="name" type="text" placeholder="John Doe" required>
+          </label>
+          <label id="email-label">
+            E-mail Address : 
+            <input id="email" type="email" placeholder="cat@photo.app" required>
+          </label>
+          <label id="number-label">
+            Your age : 
+            <input id="number" type="number" min="12" max="120" placeholder="Age">
+          </label>
+          <label> 
+            Gender :
+            <select id="dropdown" class="dropdown-gender">
+              <option>...</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+
+        </fieldset>
+
+
+        <fieldset>
+          <h3>Sushi in general</h3>
+          <label>How often do you eat Sushi ?</label>
+          <label for="level1"> <input type="radio" name="frequency" value="week" id="level1" class="inline-row"> Once or twice a week</label>
+          <label for="level2"> <input type="radio" name="frequency" value="month" id="level2" class="inline-row"> Once or twice a month</label>
+          <label for="level3"> <input type="radio" name="frequency" value="year" id="level3" class="inline-row"> Once or twice a year</label>
+
+          <label>Which proteins do you prefer ?</label>
+          <label ><input type="checkbox" value="salmon" class="inline-row">Salmon </label>
+          <label ><input type="checkbox" value="tuna" class="inline-row">Tuna </label>
+          <label ><input type="checkbox" value="shrimp" class="inline-row">Shrimp </label>
+          <label ><input type="checkbox" value="chicken" class="inline-row">Chicken </label>
+          <label ><input type="checkbox" value="eel" class="inline-row">Eel </label>
+         
+          <label>Which ingredients do you like ?</label>
+          <label ><input type="checkbox" value="avocado" class="inline-row">Avocado </label>
+          <label ><input type="checkbox" value="cheese" class="inline-row">Cheese </label>
+          <label ><input type="checkbox" value="cucumber" class="inline-row">Cucumber </label>
+          <label ><input type="checkbox" value="chive" class="inline-row">Chive </label>
+          
+        </fieldset>
+
+
+        <fieldset>
+          <h3>Our Sushi</h3>
+          <label> Would you recommend GoSushi ?</label>
+          <label>
+            <label for="recommend1" class="inline-stacked2"> <input type="radio" name="recommend-score" value="Never" id="recommend1" > Never</label>
+            <label for="recommend2" class="inline-stacked2"> <input type="radio" name="recommend-score" value="Unlikely" id="recommend2"> Unlikely</label>
+            <label for="recommend3" class="inline-stacked2"> <input type="radio" name="recommend-score" value="Maybe" id="recommend3"> Maybe</label>
+            <label for="recommend4" class="inline-stacked2"> <input type="radio" name="recommend-score" value="Most likely" id="recommend4"> Most likely</label>
+            <label for="recommend5" class="inline-stacked2"> <input type="radio" name="recommend-score" value="Definitely" id="recommend5"> Definitely</label>
+          </label>
+        
+          <label>How would you grade the food out of 5 ?</label>
+          <label for="score-1" class="inline-stacked"><input type="radio" name="food-score" value="radio1" id="score-1" > 1</label>
+          <label for="score-2" class="inline-stacked"><input type="radio" name="food-score" value="radio1" id="score-2"> 2</label>
+          <label for="score-3" class="inline-stacked"><input type="radio" name="food-score" value="radio1" id="score-3"> 3</label>
+          <label for="score-4" class="inline-stacked"><input type="radio" name="food-score" value="radio1" id="score-4"> 4</label>
+          <label for="score-5" class="inline-stacked"><input type="radio" name="food-score" value="radio1" id="score-5"> 5</label>
+        
+          <label> Which are your favorite Sushi rolls on our menu ?</label>
+          <label ><input type="checkbox" value="check1" class="inline-row">California Roll </label>
+          <label ><input type="checkbox" value="check2" class="inline-row">Maki </label>
+          <label ><input type="checkbox" value="check3" class="inline-row">Crispy / Crunshy </label>
+          <label ><input type="checkbox" value="check4" class="inline-row">Futomaki - Komodo </label>
+          <label ><input type="checkbox" value="check5" class="inline-row">Fusion Roll </label>
+          <label>
+            Do you have any additional comments ?
+            <textarea placeholder="feedback goes here"></textarea>
+          </label>
+        </fieldset>
+       
+        <input type="submit" id="submit" value="Submit"</strong>
+      </form>
+      <p class ="form-footer"> For more info, visit <a href="https://gosushi.tn/" class="link">our website</a>.</p>
+    </div>
+
+  </body>
+</html>
